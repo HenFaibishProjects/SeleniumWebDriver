@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1480929910473" stop="1480929914235"
+	xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+	<name>Default suite : Default test</name>
+	<title>Default suite : Default test</title>
+	<test-cases>
+		<test-case start="1480929910481" stop="1480929910483"
+			status="pending">
+			<name>fullCahrge</name>
+			<failure>
+				<message>Test not implemented yet</message>
+				<stack-trace>There are no stack trace</stack-trace>
+			</failure>
+			<steps />
+			<attachments />
+			<labels>
+				<label name="host" value="Hen-Windows" />
+				<label name="thread" value="7536@Hen-Windows.main(1)" />
+			</labels>
+		</test-case>
+		<test-case start="1480929914143" stop="1480929914222"
+			status="passed">
+			<name>fullCahrge</name>
+			<steps />
+			<attachments />
+			<labels>
+				<label name="host" value="Hen-Windows" />
+				<label name="thread" value="7536@Hen-Windows.main(1)" />
+			</labels>
+		</test-case>
+	</test-cases>
+	<labels>
+		<label name="framework" value="TestNG" />
+		<label name="language" value="JAVA" />
+	</labels>
+</ns2:test-suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1481876988478" stop="1481876998566" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1481876998017" stop="1481876998552" status="passed">
+            <name>TestMyDesirePriceAndSendMeAnEmailWhenDone</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Hen-Windows"/>
+                <label name="thread" value="220840@Hen-Windows.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

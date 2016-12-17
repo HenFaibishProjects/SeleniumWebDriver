@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1480938728124" stop="1480938752037"
+	xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+	<name>Default suite : Default test</name>
+	<title>Default suite : Default test</title>
+	<test-cases>
+		<test-case start="1480938751565" stop="1480938751726"
+			status="passed">
+			<name>fullCahrge[חן פייביש,0542689621,2815,100,14:00]</name>
+			<steps />
+			<attachments />
+			<labels>
+				<label name="host" value="Hen-Windows" />
+				<label name="thread" value="10488@Hen-Windows.main(1)" />
+			</labels>
+		</test-case>
+	</test-cases>
+	<labels>
+		<label name="framework" value="TestNG" />
+		<label name="language" value="JAVA" />
+	</labels>
+</ns2:test-suite>

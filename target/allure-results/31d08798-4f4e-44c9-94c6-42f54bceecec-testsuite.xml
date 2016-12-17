@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1481536318374" stop="1481536336929"
+	xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+	<name>Default suite : Default test</name>
+	<title>Default suite : Default test</title>
+	<test-cases>
+		<test-case start="1481536333354" stop="1481536336578"
+			status="broken">
+			<name>TestMyDesirePriceAndSendMeAnEmailWhenDone</name>
+			<failure>
+				<message>RuntimeException: javax.mail.MessagingException:
+					IOException while sending message;
+					nested exception is:
+					java.io.FileNotFoundException: c:\tmpScreenShots\screenshot.png (The system cannot find the file
+					specified)</message>
+				<stack-trace>java.lang.RuntimeException:
+					javax.mail.MessagingException: IOException while sending message;
+					nested exception is:
+					java.io.FileNotFoundException: c:\tmpScreenShots\screenshot.png (The system cannot find the file
+					specified)
+					at vitaCost.SendEmail.mainsend(SendEmail.java:100)
+					at
+					vitaCost.TestAmmount.TestMyDesirePriceAndSendMeAnEmailWhenDone(TestAmmount.java:35)
+					at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+					at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+					at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+					at java.lang.reflect.Method.invoke(Unknown Source)
+					at
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+					at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+					at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+					at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+					at
+					org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+					at
+					org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+					at org.testng.TestRunner.privateRun(TestRunner.java:771)
+					at org.testng.TestRunner.run(TestRunner.java:621)
+					at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+					at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+					at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+					at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+					at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+					at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+					at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+					at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+					at org.testng.TestNG.run(TestNG.java:1032)
+					at
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+					at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+					at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+					Caused by: javax.mail.MessagingException: IOException while sending
+					message;
+					nested exception is:
+					java.io.FileNotFoundException: c:\tmpScreenShots\screenshot.png (The system cannot find the file
+					specified)
+					at
+					com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1308)
+					at javax.mail.Transport.send0(Transport.java:255)
+					at javax.mail.Transport.send(Transport.java:124)
+					at vitaCost.SendEmail.mainsend(SendEmail.java:95)
+					... 25 more
+					Caused by: java.io.FileNotFoundException:
+					c:\tmpScreenShots\screenshot.png (The system cannot find the file
+					specified)
+					at java.io.FileInputStream.open(Native Method)
+					at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+					at javax.activation.FileDataSource.getInputStream(Unknown Source)
+					at javax.activation.DataHandler.writeTo(Unknown Source)
+					at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1652)
+					at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:961)
+					at
+					javax.mail.internet.MimeMultipart.writeTo(MimeMultipart.java:553)
+					at
+					com.sun.mail.handlers.multipart_mixed.writeTo(multipart_mixed.java:81)
+					at javax.activation.ObjectDataContentHandler.writeTo(Unknown
+					Source)
+					at javax.activation.DataHandler.writeTo(Unknown Source)
+					at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1652)
+					at javax.mail.internet.MimeMessage.writeTo(MimeMessage.java:1850)
+					at
+					com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1259)
+					... 28 more
+				</stack-trace>
+			</failure>
+			<steps />
+			<attachments />
+			<labels>
+				<label name="host" value="Hen-Windows" />
+				<label name="thread" value="102752@Hen-Windows.main(1)" />
+			</labels>
+		</test-case>
+	</test-cases>
+	<labels>
+		<label name="framework" value="TestNG" />
+		<label name="language" value="JAVA" />
+	</labels>
+</ns2:test-suite>
