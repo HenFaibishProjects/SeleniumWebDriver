@@ -16,8 +16,8 @@ public class TenBisBaseTest extends BaseTest{
 	protected String preferendWebBrowser = "Firefox";
 	protected String mainWebServerURL = "https://www.10bis.co.il/";
 	protected static String chargingWebServerURL = "https://www.10bis.co.il/Account/UserReportv";  
-	protected static String userMail = "hen.faibish@solaredge.com";
-	protected static String userPassword = "slaccount1!";
+	protected static String userMail = "SomeMail@SomeDomain.com";
+	protected static String userPassword = "SomePassword";
 	protected final static float amountGivenPrice = 850;
 	protected float currentAmount;
 	protected float leftAmount;
