@@ -27,8 +27,8 @@ public class homepage {
 	@BeforeMethod
 	public void setUp() {
 		
-		System.setProperty("webdriver.gecko.driver", "D:/DOK/Selenium/drivers/Chrome/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();	
+		System.setProperty("webdriver.chrome.driver", "C:\\work\\SeleniumWebDriver\\src\\test\\resources\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 30);
