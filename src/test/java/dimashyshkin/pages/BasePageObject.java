@@ -1,5 +1,4 @@
 package dimashyshkin.pages;
-
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -8,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class BasePageObject {
 
@@ -20,11 +21,6 @@ public class BasePageObject {
     }
 
     /** Open page with given URL */
-    protected String getCurrentUrl() {
-        return driver.getCurrentUrl();
-    }
-
-    /** Open page with given URL */
     protected void openUrl(String url) {
         driver.get(url);
     }
@@ -32,6 +28,11 @@ public class BasePageObject {
     /** Find element using given locator */
     protected WebElement find(By locator) {
         return driver.findElement(locator);
+    }
+
+    /** Find all elements using given locator */
+    protected List<WebElement> findAll(By locator) {
+        return driver.findElements(locator);
     }
 
     /** Click on element with given locator when its visible */
@@ -44,6 +45,11 @@ public class BasePageObject {
     protected void type(String text, By locator) {
         waitForVisibilityOf(locator, 5);
         find(locator).sendKeys(text);
+    }
+
+    /** Get URL of current page from browser */
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
     }
 
     /**

@@ -8,7 +8,7 @@
         <parameter name="expectedMessage" value="Your username is invalid!"></parameter>
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="dimashyshkin.NegativeLogInTests">
+            <class name="dimashyshkin.tests.login.NegativeLogInTests">
             </class>
         </classes>
     </test>
@@ -21,7 +21,7 @@
         <parameter name="expectedMessage" value="Your password is invalid!"></parameter>
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="dimashyshkin.NegativeLogInTests">
+            <class name="dimashyshkin.tests.login.NegativeLogInTests">
             </class>
         </classes>
     </test>
