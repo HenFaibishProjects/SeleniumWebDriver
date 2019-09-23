@@ -10,6 +10,8 @@ public class WelcomePageObject extends BasePageObject{
     private String pageUrl = "http://the-internet.herokuapp.com/";
     private By checkboxesLinkLocator = By.linkText("Checkboxes");
     private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
+    private By javaScriptAlertsLinkLocator = By.linkText("JavaScript Alerts");
+    private By editorLinkLocator = By.linkText("WYSIWYG Editor");
 
     public WelcomePageObject(WebDriver driver, Logger log) {
         super(driver,log);
@@ -36,6 +38,18 @@ public class WelcomePageObject extends BasePageObject{
         log.info("Clicking Checkboxes link on Welcome Page");
         click(checkboxesLinkLocator);
         return new CheckboxesPage(driver, log);
+    }
+
+    public JavaScriptAlertsPage clickJavaScriptAlertsLink() {
+        log.info("Clicking JavaScript Alerts link on Welcome Page");
+        click(javaScriptAlertsLinkLocator);
+        return new JavaScriptAlertsPage(driver, log);
+    }
+
+    public EditorPage clickWYSIWYGEditorLink() {
+        log.info("Clicking WYSIWYG Editor link on Welcome Page");
+        click(editorLinkLocator);
+        return new EditorPage(driver, log);
     }
 
 }
