@@ -1,4 +1,4 @@
-package dimashyshkin.tests;
+package dimashyshkin.tests.alertstests;
 
 
 import dimashyshkin.Infra.TestUtilities;

@@ -22,7 +22,7 @@ public class BrowserDriverFactory {
 
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "C:\\work\\SeleniumWebDriver\\src\\test\\resources\\drivers\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Hennnn\\\\IdeaProjects\\SeleniumWebDriver\\src\\test\\resources\\drivers\\chromedriver.exe");
                 driver.set(new ChromeDriver());
                 break;
 
